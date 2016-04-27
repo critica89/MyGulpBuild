@@ -1,0 +1,21 @@
+{
+  "name": "nopick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "respond": "^1.4.2",
+    "html5shiv": "^3.7.3"
+  }
+}

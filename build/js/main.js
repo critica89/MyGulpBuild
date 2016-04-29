@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+
+
+
+
+
+
+
+
+
+
+	
+/*
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
 	//<a class="fancybox"><img src="image.jpg" /></a>
@@ -13,7 +25,7 @@ $(document).ready(function() {
 			$(".class").addClass("active");
 		} else if (direction === "up") {
 			$(".class").removeClass("deactive");
-		};
+		}
 	}, {offset: 100});	
 
 	//Плавный скролл до блока .div по клику на .scroll
@@ -70,6 +82,7 @@ $(document).ready(function() {
 			}, 1000);
 		});
 		return false;
-	});
+	});*/
+	
 
 });

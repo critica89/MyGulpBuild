@@ -1,3 +1,15 @@
+@charset "UTF-8";
+/*----------- Переменные ------------*/
+/*----------- Конец Переменные ------------*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 *::-webkit-input-placeholder {
   color: #666;
   opacity: 1; }
@@ -14,6 +26,48 @@
   color: #666;
   opacity: 1; }
 
+html,
+body {
+  height: 100%;
+  background-color: #19bd9a; }
+
 body {
   font-family: "open_sansregular", sans-serif;
   font-size: 14px; }
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase; }
+
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 70px; }
+
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 1.42857143em;
+  line-height: 12px; }
+
+h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.42857143em;
+  line-height: 125px; }
+
+/*----------------Навигация------------------*/
+.nav {
+  list-style: none; }
+  .nav li {
+    float: left; }
+  .nav__item {
+    text-decoration: none;
+    display: block;
+    padding: 5px; }
+
+/*----------------Навигация END------------------*/
+.header__content {
+  text-align: center;
+  height: 100%; }

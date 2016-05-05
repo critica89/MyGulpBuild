@@ -1,8 +1,55 @@
 $(document).ready(function() {
 
+	var menuToggle = (function ($) {
+		var ulMenu = $(".header__nav");
+		var btnMenu = $(".menu-toggle");
 
+		var isVisible = false;
 
+		return {
+			getUlMenu : ulMenu,
+			getBtnMenu : btnMenu,
 
+			toggleMenu : function () {
+				if (!isVisible) {
+					ulMenu.addClass("nav_visible");
+					isVisible = true;
+				} else {
+					ulMenu.removeClass("nav_visible");
+					isVisible = false;
+				}
+			}
+		}
+	})(jQuery);
+
+	var aboutTabs = (function ($) {
+			var aboutTabs = $("[data-tab]");
+			var aboutContent = $("[data-tab-content]");
+
+			return {
+				getButtons: aboutTabs,
+				getContent: aboutContent,
+
+				showContent: function() {
+					
+					var dataTab = $(this).data("tab");
+					aboutTabs.removeClass("detailsAboutUs__button_active");
+					$(this).addClass("detailsAboutUs__button_active");
+					aboutContent.each( function() {						
+						var dataTabContent = $(this).data("tabContent");
+						$(this).removeClass("detailsAboutUs__content_visible");
+						if(dataTabContent === dataTab) {
+							$(this).addClass("detailsAboutUs__content_visible");
+						}
+					});
+				}
+			}
+		})(jQuery);
+
+var init = (function () {
+	menuToggle.getBtnMenu.click(menuToggle.toggleMenu);
+	aboutTabs.getButtons.click(aboutTabs.showContent);
+})();
 
 
 
